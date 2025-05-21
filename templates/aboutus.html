@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sanjay Naveen</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #007BFF;
+            margin-bottom: 10px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #00A6FF;
+        }
+        .details {
+            padding: 15px;
+        }
+        
+        /* Grid Layout for Contact & Skills */
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact, .skills {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            background: #252525;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        .contact h3, .skills h3 {
+            color: #00A6FF;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .contact p, .skills ul {
+            list-style: none;
+            text-align: center;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #00A6FF;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .skills ul {
+            padding-left: 0;
+        }
+        .skills li {
+            padding: 5px 0;
+        }
+        .btn {
+            display: block;
+            width: 180px;
+            text-align: center;
+            margin: 20px auto;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .profile img {
+                width: 100px;
+                height: 100px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            .info-container {
+                flex-direction: column;
+            }
+            .contact, .skills {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile">
+            <img src="file:///C:/Users/Admin/Pictures/pictures/Sanjay.jpg" alt="Sanjay Naveen">
+            <h1>Sanjay Naveen R</h1>
+            <h2>Web Developer</h2>
+        </div>
+
+        <div class="info-container">
+            <div class="contact">
+                <h3>📩 Contact</h3>
+                <p>📞 +91 90258 79408</p>
+                <p>📧 <a href="mailto:sanjaynaveen477@gmail.com">sanjaynaveen477@gmail.com</a></p>
+                <p>📍 Tirunelveli, Tamil Nadu</p>
+                <p>🔗 <a href="https://linkedin.com/in/sanjaynaveen" target="_blank">LinkedIn</a></p>
+                <p>🔗 <a href="https://github.com/Sanjay-Naveen" target="_blank">GitHub</a></p>
+            </div>
+
+            <div class="skills">
+                <h3>🛠 Skills</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Python, Flask</li>
+                    <li>MongoDB Atlas ,Compass</li>
+                    <li>Java Programming</li>
+                    <li>UI/UX</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="#" class="btn" onclick="alert('Thanks for visiting!')">Say Hi!</a>
+    </div>
+
+</body>
+</html>
+ 
